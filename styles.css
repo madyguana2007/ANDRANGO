@@ -1,0 +1,175 @@
+/* General styles */
+/* Estilo para la imagen de fondo de la página principal */
+body {
+    background-image: url('escritoio-britani-images.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* No repetir la imagen de fondo */
+    color: white; /* Color de texto para mayor contraste */
+}
+
+/* Estilo para la imagen principal dentro de <main> */
+.imagen-principal {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+header {
+    background-color: #007BFF; /* Celeste */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white; /* Fondo blanco para el contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 2em;
+    color: #007BFF; /* Celeste */
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo para centrar las imágenes y regular su tamaño */
+main img {
+    display: block;
+    margin: 20px auto; /* Centra las imágenes */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    max-height: 400px; /* Limita la altura máxima de las imágenes */
+    object-fit: cover;
+}
+
+/* Estilos para los botones de servicios */
+.servicios-botones {
+    display: flex;
+    justify-content: center;  /* Centra los botones horizontalmente */
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px; /* Espacio entre botones */
+}
+
+.servicios-botones a.button {
+    padding: 15px 30px;
+    background-color: #007BFF; /* Celeste */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid white; /* Bordes blancos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efectos de hover y visited */
+.servicios-botones a.button:hover {
+    background-color: white; /* Fondo blanco al pasar el ratón */
+    color: #007BFF; /* Texto celeste */
+    transform: translateY(-3px);
+}
+
+.servicios-botones a.button:visited {
+    background-color: #007BFF; /* Celeste cuando ha sido visitado */
+    color: white; /* Texto blanco cuando ha sido visitado */
+}
+
+.servicios-botones a.button:active {
+    background-color: #0056b3; /* Celeste más oscuro al hacer clic */
+}
+
+/* Botón de regreso */
+.regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Celeste */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold; /* Negrita */
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.regresar:hover {
+    background-color: white; /* Fondo blanco al pasar el ratón */
+    color: #007BFF; /* Texto celeste */
+    transform: translateY(-3px);
+}
+
+/* Estilo para la imagen de fondo de la página principal */
+body.background-image {
+    background-image: url('imagen-unidad-educativa.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    color: white; /* Texto blanco para contraste */
+}
+
+/* Fondo semi-transparente para el contenido */
+header, section, footer {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
